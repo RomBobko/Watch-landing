@@ -1,0 +1,96 @@
+.newsletter {
+    padding: 40px 0;
+    background: #f9a74b; // помаранчевий фон
+
+    &__inner {
+        display: grid;
+        gap: 20px; // mobile-first: стік
+        align-items: center;
+    }
+
+    &__content {
+        max-width: 560px;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+        color: #2a2a2a;
+    }
+
+    &__text {
+        color: #4f4f4f;
+        max-width: 52ch;
+    }
+
+    /* форма */
+    &__form {
+        justify-self: start;
+        width: 100%;
+        max-width: 540px;
+    }
+
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        width: 100%;
+        background: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    &__input {
+        border: 0;
+        padding: 14px 16px;
+        font-size: 1rem;
+        outline: none;
+        min-width: 0;
+    }
+
+    &__input::placeholder {
+        color: #9b9b9b;
+    }
+
+    &__btn {
+        padding: 0 20px;
+        height: 100%;
+        border-radius: 0; // зливається з групою
+    }
+
+    &__hint {
+        margin-top: 8px;
+        font-size: 0.85rem;
+        color: #2a2a2a;
+        min-height: 1em;
+    }
+
+    /* desktop: дві колонки як у макеті */
+    @media (min-width: 992px) {
+        &__inner {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        &__form {
+            justify-self: end;
+        }
+    }
+}
+
+/* базова кнопка (якщо вже є — пропусти) */
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+.btn--dark {
+    background: #111;
+    color: #fff;
+    padding: 12px 22px;
+}
+.btn--dark:hover {
+    opacity: 0.9;
+}

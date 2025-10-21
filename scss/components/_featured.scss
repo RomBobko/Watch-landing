@@ -1,0 +1,107 @@
+.featured {
+  padding: 56px 0;
+
+  &__head {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__divider {
+    display: inline-block;
+    width: 64px; height: 3px;
+    background: #e5b17a; /* твій акцент */
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 1rem;          // як у макеті (малий верхній заголовок)
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;      // mobile-first
+    gap: 20px;
+  }
+
+  @media (min-width: 768px) {
+    &__grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1024px) {
+    &__grid { grid-template-columns: repeat(3, 1fr); }
+  }
+}
+
+.product-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 20px 20px 24px;
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+
+  &--emphasis {                // перша картка з більшою тінню
+    box-shadow: 0 14px 24px rgba(0,0,0,.08);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.08);
+  }
+
+  &__badge {
+    position: absolute;
+    left: 16px; top: 16px;
+    background: #f9a74b;      // помаранчевий як у hero
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  &__media {
+    display: grid; place-items: center;
+    min-height: 220px;        // дає однакову висоту
+    margin-bottom: 18px;
+
+    img { max-width: 80%; height: auto; }
+  }
+
+  &__name {
+    font-size: .9rem;
+    letter-spacing: .06em;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  &__price {
+    color: #e5a04f;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  &__btn {                     // кнопка показується лише в emphasized або при hover (опційно)
+    display: inline-block;
+    padding: 10px 18px;
+  }
+}
+
+/* універсальні кнопки, якщо ще не зробив */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .85rem;
+  padding: 10px 20px;
+  transition: opacity .2s ease;
+
+  &--dark { background:#111; color:#fff; }
+  &--light { background:#eee; color:#111; }
+
+  &:hover { opacity: .9; }
+}

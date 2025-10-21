@@ -1,0 +1,20 @@
+// 1) Utils (змінні, міксіни, плейсхолдери)
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+// 2) Base (reset/normalize, шрифти, базові елементи)
+@import './base/normalize';
+@import './base/fonts';
+@import './base/common';
+
+// 3) Components (секції сторінки)
+@import './components/header';
+@import './components/hero';
+@import './components/products';
+@import './components/featured';
+@import './components/story';
+@import './components/testimonial';
+@import './components/newsletter';
+@import './components/footer';
+@import './components/new';    // секція "New Arrivals"

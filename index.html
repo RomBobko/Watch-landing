@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Landing Page</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <!-- ЛОГО -->
+        <a href="/" class="logo" aria-label="Rolex home">
+          <svg class="logo__icon" aria-hidden="true">
+            <use href="./img/symbol-defs.svg#icon-watch-logo"></use>
+          </svg>
+          <span class="logo__text">ROLEX</span>
+        </a>
+
+        <!-- НАВІГАЦІЯ -->
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Featured</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Products</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">New</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- ІКОНКИ -->
+        <div class="header__icons">
+          <button class="icon-btn" aria-label="Toggle theme">
+            <svg class="icon">
+              <use href="./img/symbol-defs.svg#icon-moon"></use>
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="Open cart">
+            <svg class="icon">
+              <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container hero__inner">
+        <!-- Ліва частина -->
+        <div class="hero__content">
+          <h1 class="hero__title">
+            New Watch <br />
+            Collections B720
+          </h1>
+
+          <p class="hero__desc">
+            Latest arrival of the new imported watches of the B720 series, with
+            a modern and resistant design.
+          </p>
+
+          <p class="hero__price">$1245</p>
+
+          <div class="hero__buttons">
+            <a href="#" class="btn btn--light">Discover</a>
+            <a href="#" class="btn btn--dark">Add to cart</a>
+          </div>
+        </div>
+
+        <!-- Права частина -->
+        <div class="hero__image-box">
+          <img
+            src="./img/hero-watch.png"
+            alt="Luxury watch model B720"
+            class="hero__image"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="featured" id="featured">
+      <div class="container">
+        <div class="featured__head">
+          <span class="featured__divider" aria-hidden="true"></span>
+          <h2 class="featured__title">Featured</h2>
+        </div>
+
+        <ul class="featured__grid">
+          <!-- card 1 -->
+          <li class="product-card product-card--emphasis">
+            <span class="product-card__badge">Sale</span>
+
+            <div class="product-card__media">
+              <img src="./img/feat-jazzmaster.png" alt="Jazzmaster watch" />
+            </div>
+
+            <h3 class="product-card__name">JAZZMASTER</h3>
+            <p class="product-card__price">$1050</p>
+
+            <a href="#" class="btn btn--dark product-card__btn">Add to cart</a>
+          </li>
+
+          <!-- card 2 -->
+          <li class="product-card">
+            <span class="product-card__badge">Sale</span>
+            <div class="product-card__media">
+              <img src="./img/feat-ingersoll.png" alt="Ingersoll watch" />
+            </div>
+            <h3 class="product-card__name">INGERSOLL</h3>
+            <p class="product-card__price">$250</p>
+          </li>
+
+          <!-- card 3 -->
+          <li class="product-card">
+            <span class="product-card__badge">Sale</span>
+            <div class="product-card__media">
+              <img src="./img/feat-rosegold.png" alt="Rose Gold watch" />
+            </div>
+            <h3 class="product-card__name">ROSE GOLD</h3>
+            <p class="product-card__price">$890</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="story" id="story">
+      <div class="container story__inner">
+        <!-- media -->
+        <div class="story__media">
+          <img
+            src="./img/story-watch.png"
+            alt="Inspirational watch of this year"
+            class="story__img"
+          />
+        </div>
+
+        <!-- content -->
+        <div class="story__content">
+          <div class="story__eyebrow">
+            <span class="story__eyeline" aria-hidden="true"></span>
+            <span class="story__eyetext">Our story</span>
+          </div>
+
+          <h2 class="story__title">Inspirational Watch of this year</h2>
+
+          <p class="story__text">
+            The latest and modern watches of this year, is available in various
+            presentations in this store, discover them now.
+          </p>
+
+          <a href="#" class="btn btn--dark story__btn">Discover</a>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products__head">
+          <span class="products__divider"></span>
+          <h2 class="products__title">Products</h2>
+        </div>
+
+        <ul class="products__grid">
+          <li class="product">
+            <div class="product__media">
+              <img src="./img/prod-spiritrose.png" alt="Spirit Rose watch" />
+            </div>
+            <h3 class="product__name">SPIRIT ROSE</h3>
+            <p class="product__price">$1500</p>
+            <button class="product__cart" aria-label="Add to cart">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="product">
+            <div class="product__media">
+              <img src="./img/prod-khakipilot.png" alt="Khaki Pilot watch" />
+            </div>
+            <h3 class="product__name">KHAKI PILOT</h3>
+            <p class="product__price">$1350</p>
+            <button class="product__cart" aria-label="Add to cart">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="product">
+            <div class="product__media">
+              <img
+                src="./img/prod-jubileeblack.png"
+                alt="Jubilee Black watch"
+              />
+            </div>
+            <h3 class="product__name">JUBILEE BLACK</h3>
+            <p class="product__price">$870</p>
+            <button class="product__cart" aria-label="Add to cart">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="product">
+            <div class="product__media">
+              <img src="./img/prod-fosilme3.png" alt="Fosil ME3 watch" />
+            </div>
+            <h3 class="product__name">FOSIL ME3</h3>
+            <p class="product__price">$650</p>
+            <button class="product__cart" aria-label="Add to cart">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="product">
+            <div class="product__media">
+              <img src="./img/prod-duchen.png" alt="Duchen watch" />
+            </div>
+            <h3 class="product__name">DUCHEN</h3>
+            <p class="product__price">$950</p>
+            <button class="product__cart" aria-label="Add to cart">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-shopping-bag"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+      <div class="container testimonial__inner">
+        <!-- Ліва колонка: текст -->
+        <div class="testimonial__content">
+          <div class="testimonial__quoteicon" aria-hidden="true">
+            <svg class="icon">
+              <use href="./img/symbol-defs.svg#icon-quote"></use>
+            </svg>
+          </div>
+
+          <blockquote class="testimonial__quote">
+            They are the best watches that one acquires, also they are always
+            with the latest news and trends, with a very comfortable price and
+            especially with the attention you receive, they are always attentive
+            to your questions.
+          </blockquote>
+
+          <p class="testimonial__date">March 27, 2021</p>
+
+          <div class="testimonial__author">
+            <img
+              class="testimonial__avatar"
+              src="./img/author-lee.png"
+              alt="Lee Doe"
+            />
+            <div class="testimonial__authorbox">
+              <span class="testimonial__name">Lee Doe</span>
+              <span class="testimonial__role">Director of a company</span>
+            </div>
+          </div>
+
+          <div
+            class="testimonial__controls"
+            aria-label="Testimonials navigation"
+          >
+            <button class="tnav tnav--prev" aria-label="Previous">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="tnav tnav--next" aria-label="Next">
+              <svg class="icon">
+                <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Права колонка: фото -->
+        <div class="testimonial__media">
+          <img
+            class="testimonial__img"
+            src="./img/testimonial-watch.jpg"
+            alt="Customer wearing a luxury watch"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="new" id="new">
+      <div class="container">
+        <div class="new__head">
+          <span class="new__divider" aria-hidden="true"></span>
+          <h2 class="new__title">New Arrivals</h2>
+        </div>
+
+        <ul class="new__grid">
+          <!-- 1 -->
+          <li class="n-card">
+            <span class="n-card__badge">NEW</span>
+            <div class="n-card__media">
+              <img src="./img/new-longines-rose.png" alt="Longines Rose" />
+            </div>
+            <h3 class="n-card__name">LONGINES ROSE</h3>
+            <p class="n-card__price">$980</p>
+          </li>
+
+          <!-- 2 (highlight) -->
+          <li class="n-card n-card--highlight">
+            <span class="n-card__badge">NEW</span>
+            <div class="n-card__media">
+              <img src="./img/new-jazzmaster.png" alt="Jazzmaster" />
+            </div>
+            <h3 class="n-card__name">JAZZMASTER</h3>
+            <p class="n-card__price">$1150</p>
+            <a class="btn btn--dark n-card__btn" href="#">Add to cart</a>
+          </li>
+
+          <!-- 3 -->
+          <li class="n-card">
+            <span class="n-card__badge">NEW</span>
+            <div class="n-card__media">
+              <img src="./img/new-dreyfuss-gold.png" alt="Dreyfuss Gold" />
+            </div>
+            <h3 class="n-card__name">DREYFUSS GOLD</h3>
+            <p class="n-card__price">$750</p>
+          </li>
+
+          <!-- 4 -->
+          <li class="n-card">
+            <span class="n-card__badge">NEW</span>
+            <div class="n-card__media">
+              <img src="./img/new-portuguese-rose.png" alt="Portuguese Rose" />
+            </div>
+            <h3 class="n-card__name">PORTUGUESE ROSE</h3>
+            <p class="n-card__price">$1590</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="newsletter"
+      id="newsletter"
+      aria-labelledby="newsletter-title"
+    >
+      <div class="container newsletter__inner">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title" id="newsletter-title">
+            Subscribe Our<br />
+            Newsletter
+          </h2>
+          <p class="newsletter__text">
+            Don’t miss out on your discounts. Subscribe to our email newsletter
+            to get the best offers, discounts, coupons, gifts and much more.
+          </p>
+        </div>
+
+        <form class="newsletter__form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <div class="newsletter__group">
+            <input
+              class="newsletter__input"
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="btn btn--dark newsletter__btn" type="submit">
+              Subscribe
+            </button>
+          </div>
+          <!-- підказка (опційно) -->
+          <p class="newsletter__hint" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <!-- Col 1 -->
+          <div class="footer__col">
+            <h3 class="footer__title">Our information</h3>
+            <ul class="footer__list">
+              <li>1234 – Peru</li>
+              <li>La Libertad 43210</li>
+              <li>123-456-789</li>
+            </ul>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="footer__col">
+            <h3 class="footer__title">About Us</h3>
+            <ul class="footer__list">
+              <li>
+                <a class="footer__link" href="#">Support Center</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Customer Support</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Copyright</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="footer__col">
+            <h3 class="footer__title">Product</h3>
+            <ul class="footer__list">
+              <li>
+                <a class="footer__link" href="#">Road bikes</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Mountain bikes</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Electric</a>
+              </li>
+              <li>
+                <a class="footer__link" href="#">Accessories</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="footer__col">
+            <h3 class="footer__title">Social</h3>
+            <ul class="footer__social">
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Facebook">
+                  <svg class="icon">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Twitter/X">
+                  <svg class="icon">
+                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer__social-link" href="#" aria-label="Instagram">
+                  <svg class="icon">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <p class="footer__copy">© Bedimcode. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

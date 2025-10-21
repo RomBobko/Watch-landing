@@ -1,0 +1,148 @@
+.products {
+  padding: 56px 0;
+
+  &__head {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  &__divider {
+    display: inline-block;
+    width: 64px;
+    height: 3px;
+    background: #e5b17a;
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr 1fr; // mobile-first
+  }
+
+  @media (min-width: 900px) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+/* ==========================
+   КАРТКА ПРОДУКТУ
+========================== */
+.p-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 18px 18px 22px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  &__media {
+    display: grid;
+    place-items: center;
+    min-height: 180px; // однакова висота всіх карток
+    margin-bottom: 16px;
+
+    img {
+      max-width: 75%;
+      height: auto;
+    }
+  }
+
+  &__name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+    color: #222;
+  }
+
+  &__price {
+    color: #e5a04f;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  /* ==========================
+     КНОПКА-ІКОНКА Add to Cart
+  ========================== */
+  &__cta {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
+  }
+
+  /* показуємо кнопку тільки при hover */
+  &:hover .p-card__cta {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+}
+
+/* ==========================
+   БАЗОВІ КНОПКИ (якщо ще не підключив)
+========================== */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  transition: opacity 0.2s ease;
+
+  &--dark {
+    background: #111;
+    color: #fff;
+  }
+
+  &--light {
+    background: #eee;
+    color: #111;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,1222 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+html {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* header */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+/* logo */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #111;
+}
+
+.logo__icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.logo__text {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* nav: mobile-first → приховано на мобілці */
+.nav {
+  display: none;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #222;
+}
+
+.nav__link--active {
+  color: #ffa44d;
+}
+
+/* icons */
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: none;
+  border: 1px solid transparent;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+/* ≥768px показуємо меню, вирівнюємо відступи */
+@media (min-width: 768px) {
+  .nav {
+    display: block;
+  }
+  .nav__list {
+    display: flex;
+    gap: 24px;
+  }
+}
+.hero {
+  padding: 40px 0;
+  background-color: #fff;
+  /* Десктоп */
+}
+.hero__inner {
+  display: flex;
+  flex-direction: column; /* mobile-first */
+  align-items: center;
+  gap: 24px;
+}
+.hero__content {
+  text-align: center;
+}
+.hero__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.hero__desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+.hero__price {
+  color: #f5a623;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.hero .btn {
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .btn--light {
+  background: #eee;
+  color: #111;
+}
+.hero .btn--dark {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.hero .btn:hover {
+  opacity: 0.9;
+}
+.hero__image-box {
+  background: #f9a74b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.hero__image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .hero__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .hero__content {
+    max-width: 50%;
+  }
+  .hero__image-box {
+    flex: 1;
+    padding: 40px;
+  }
+}
+
+.products {
+  padding: 56px 0;
+}
+.products__head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.products__divider {
+  display: inline-block;
+  width: 64px;
+  height: 3px;
+  background: #e5b17a;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+.products__title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+.products__grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 900px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .products__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ==========================
+   КАРТКА ПРОДУКТУ
+========================== */
+.p-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 18px 18px 22px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* ==========================
+     КНОПКА-ІКОНКА Add to Cart
+  ========================== */
+  /* показуємо кнопку тільки при hover */
+}
+.p-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+.p-card__media {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  margin-bottom: 16px;
+}
+.p-card__media img {
+  max-width: 75%;
+  height: auto;
+}
+.p-card__name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  color: #222;
+}
+.p-card__price {
+  color: #e5a04f;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.p-card__cta {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(5px);
+}
+.p-card:hover .p-card__cta {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.p-card .icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* ==========================
+   БАЗОВІ КНОПКИ (якщо ще не підключив)
+========================== */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  transition: opacity 0.2s ease;
+}
+.btn--dark {
+  background: #111;
+  color: #fff;
+}
+.btn--light {
+  background: #eee;
+  color: #111;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.featured {
+  padding: 56px 0;
+}
+.featured__head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.featured__divider {
+  display: inline-block;
+  width: 64px;
+  height: 3px;
+  background: #e5b17a; /* твій акцент */
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+.featured__title {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #666;
+}
+.featured__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .featured__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .featured__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 20px 20px 24px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.product-card--emphasis {
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.08);
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.product-card__badge {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background: #f9a74b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.product-card__media {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  margin-bottom: 18px;
+}
+.product-card__media img {
+  max-width: 80%;
+  height: auto;
+}
+.product-card__name {
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.product-card__price {
+  color: #e5a04f;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.product-card__btn {
+  display: inline-block;
+  padding: 10px 18px;
+}
+
+/* універсальні кнопки, якщо ще не зробив */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  transition: opacity 0.2s ease;
+}
+.btn--dark {
+  background: #111;
+  color: #fff;
+}
+.btn--light {
+  background: #eee;
+  color: #111;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.story {
+  padding: 56px 0;
+  /* media (картинка + помаранчевий блок ззаду) */
+  /* content */
+  /* ≥1024px — 2 колонки як у макеті */
+}
+.story__inner {
+  display: grid;
+  gap: 28px;
+  /* mobile-first: все стекається */
+}
+.story__media {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.story__media::before {
+  content: "";
+  position: absolute;
+  left: -18px; /* підженеш під макет */
+  bottom: -22px;
+  width: 60%;
+  height: 26%;
+  background: #f9a74b; /* твій помаранчевий */
+  z-index: 0;
+  border-radius: 2px;
+}
+.story__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1; /* над помаранчевим прямокутником */
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+}
+.story__content {
+  max-width: 540px;
+}
+.story__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.story__eyeline {
+  width: 44px;
+  height: 3px;
+  background: #e5b17a;
+  border-radius: 2px;
+}
+.story__eyetext {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+.story__title {
+  font-size: clamp(1.6rem, 2.2vw + 1rem, 2.25rem);
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 12px;
+}
+.story__text {
+  color: #666;
+  max-width: 48ch;
+  margin-bottom: 20px;
+}
+.story__btn {
+  padding: 12px 22px;
+}
+@media (min-width: 1024px) {
+  .story__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+  }
+  .story__media {
+    margin: 0;
+  }
+}
+
+/* базові кнопки, якщо ще не підключив */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.btn--dark {
+  background: #111;
+  color: #fff;
+  padding: 10px 20px;
+  transition: opacity 0.2s;
+}
+
+.btn--dark:hover {
+  opacity: 0.9;
+}
+
+.testimonial {
+  padding: 64px 0;
+  /* ліва частина */
+  /* права частина */
+  /* ≥1024px — дві колонки */
+}
+.testimonial__inner {
+  display: grid;
+  gap: 28px;
+}
+.testimonial__content {
+  max-width: 560px;
+}
+.testimonial__quoteicon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: #fff3e4;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.testimonial__quoteicon .icon {
+  width: 18px;
+  height: 18px;
+  fill: #f4a24a;
+}
+.testimonial__quote {
+  color: #5a5a5a;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.testimonial__date {
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+}
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.testimonial__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial__name {
+  font-weight: 700;
+  color: #222;
+  display: block;
+}
+.testimonial__role {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+.testimonial__controls {
+  display: flex;
+  gap: 10px;
+}
+.testimonial .tnav {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #f5f5f5;
+  color: #222;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.testimonial .tnav .icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.testimonial .tnav:hover {
+  background: #ececec;
+  transform: translateY(-1px);
+}
+.testimonial__media {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.testimonial__media::before {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: -26px; /* піджени під макет */
+  width: 68%;
+  height: 56%;
+  background: #f9a74b; /* помаранчевий фон */
+  z-index: 0;
+  border-radius: 2px;
+}
+.testimonial__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
+}
+@media (min-width: 1024px) {
+  .testimonial__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
+.newsletter {
+  padding: 40px 0;
+  background: #f9a74b;
+  /* форма */
+  /* desktop: дві колонки як у макеті */
+}
+.newsletter__inner {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+}
+.newsletter__content {
+  max-width: 560px;
+}
+.newsletter__title {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+  color: #2a2a2a;
+}
+.newsletter__text {
+  color: #4f4f4f;
+  max-width: 52ch;
+}
+.newsletter__form {
+  justify-self: start;
+  width: 100%;
+  max-width: 540px;
+}
+.newsletter__group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+.newsletter__input {
+  border: 0;
+  padding: 14px 16px;
+  font-size: 1rem;
+  outline: none;
+  min-width: 0;
+}
+.newsletter__input::placeholder {
+  color: #9b9b9b;
+}
+.newsletter__btn {
+  padding: 0 20px;
+  height: 100%;
+  border-radius: 0;
+}
+.newsletter__hint {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #2a2a2a;
+  min-height: 1em;
+}
+@media (min-width: 992px) {
+  .newsletter__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .newsletter__form {
+    justify-self: end;
+  }
+}
+
+/* базова кнопка (якщо вже є — пропусти) */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.btn--dark {
+  background: #111;
+  color: #fff;
+  padding: 12px 22px;
+}
+
+.btn--dark:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  padding: 48px 0 28px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  /* grid */
+  /* columns */
+  /* social */
+  /* bottom bar */
+}
+.footer__grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 28px;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.footer__col {
+  min-width: 0;
+}
+.footer__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #2a2a2a;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__list li {
+  margin-bottom: 8px;
+  color: #666;
+}
+.footer__link {
+  color: #666;
+  transition: color 0.2s ease;
+}
+.footer__link:hover {
+  color: #111;
+}
+.footer__social {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__social-link {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f5f5f5;
+  color: #222;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.footer__social-link:hover {
+  background: #ececec;
+  transform: translateY(-1px);
+}
+.footer__social-link .icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+.footer__bar {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  text-align: center;
+}
+.footer__copy {
+  color: #9a9a9a;
+  font-size: 0.9rem;
+}
+
+.new {
+  padding: 56px 0;
+}
+.new__head {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.new__divider {
+  display: inline-block;
+  width: 64px;
+  height: 3px;
+  background: #e5b17a;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+.new__title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666;
+}
+.new__grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 900px) {
+  .new__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .new__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===== Card ===== */
+.n-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 6px;
+  padding: 20px 20px 24px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.n-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+.n-card__badge {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: #f9a74b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.n-card__media {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  margin-bottom: 18px;
+}
+.n-card__media img {
+  max-width: 78%;
+  height: auto;
+}
+.n-card__name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  color: #222;
+}
+.n-card__price {
+  color: #e5a04f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.n-card__btn {
+  display: none;
+}
+
+/* Виділена помаранчева картка */
+.n-card--highlight {
+  background: #f9a74b; /* помаранчевий фон */
+  border-color: transparent;
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.12);
+}
+.n-card--highlight .n-card__name,
+.n-card--highlight .n-card__price {
+  color: #111;
+}
+.n-card--highlight .n-card__badge {
+  background: #111;
+}
+.n-card--highlight .n-card__btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* універсальні кнопки, якщо ще не є в проекті */
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  transition: opacity 0.2s;
+}
+
+.btn--dark {
+  background: #111;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=main.css.map */

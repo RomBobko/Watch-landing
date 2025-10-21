@@ -1,0 +1,108 @@
+.story {
+    padding: 56px 0;
+
+    &__inner {
+        display: grid;
+        gap: 28px;
+        /* mobile-first: все стекається */
+    }
+
+    /* media (картинка + помаранчевий блок ззаду) */
+    &__media {
+        position: relative;
+        max-width: 520px;
+        margin: 0 auto;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -18px; /* підженеш під макет */
+            bottom: -22px;
+            width: 60%;
+            height: 26%;
+            background: #f9a74b; /* твій помаранчевий */
+            z-index: 0;
+            border-radius: 2px;
+        }
+    }
+
+    &__img {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 1; /* над помаранчевим прямокутником */
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    /* content */
+    &__content {
+        max-width: 540px;
+    }
+
+    &__eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    &__eyeline {
+        width: 44px;
+        height: 3px;
+        background: #e5b17a;
+        border-radius: 2px;
+    }
+    &__eyetext {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        color: #7a7a7a;
+        font-weight: 600;
+    }
+
+    &__title {
+        font-size: clamp(1.6rem, 2.2vw + 1rem, 2.25rem);
+        line-height: 1.2;
+        font-weight: 700;
+        color: #2a2a2a;
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        color: #666;
+        max-width: 48ch;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        padding: 12px 22px;
+    }
+
+    /* ≥1024px — 2 колонки як у макеті */
+    @media (min-width: 1024px) {
+        &__inner {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 48px;
+        }
+        &__media {
+            margin: 0;
+        }
+    }
+}
+
+/* базові кнопки, якщо ще не підключив */
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.btn--dark {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+    transition: opacity 0.2s;
+}
+.btn--dark:hover {
+    opacity: 0.9;
+}
